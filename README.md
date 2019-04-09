@@ -16,6 +16,7 @@ La partie serveur de bomberman a été développée sous JavaScript. Le code est
 ### Versions des modules
 | Module     | Version  |
 | ---------  | -------- |
+| nodejs     | 0.8.9    |
 | ejs        | 0.8.2    |
 | express    | 3.0.0rc4 |
 | socket.io  | 0.9.10   |
