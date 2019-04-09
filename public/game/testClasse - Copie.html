@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>game</title>
+		
+		<script type="text/javascript" src="Player.js"></script>
+		
+		<script>
+			var player1 = new Player('jamel', 123, 456);
+			var player2 = new Player('superman', 200, 400); 
+			console.log(player1.name + ' can drop bomb : ' + player1.canDropBomb());
+			console.log(player2.name + ' can drop bomb : ' + player2.canDropBomb());
+			player1.dropBomb();
+			console.log(player1.name + ' can drop bomb : ' + player1.canDropBomb());
+			console.log(player2.name + ' can drop bomb : ' + player2.canDropBomb());
+			player1.pickUpBomb();
+			console.log(player1.name + ' can drop bomb : ' + player1.canDropBomb());
+			console.log(player2.name + ' can drop bomb : ' + player2.canDropBomb());
+		</script>
+		
+	</head>
+	
+	<body>
+		
+	</body>
+</html>

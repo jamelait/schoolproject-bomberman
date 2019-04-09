@@ -1,0 +1,30 @@
+/*
+body {
+	background-color: #2A2A2A;
+}
+
+/*  Bootstrap override  
+.hero-unit {
+	background-color: #828282;
+}
+
+.hero-unit h1 {
+	color: #DDDDDD;
+}
+*/
+canvas {
+	background-color: black;
+}
+
+.game {
+/*	margin-top: 100px;
+
+margin-right: auto;
+margin-left: auto;
+width: 50%;
+*/
+}
+
+#game {
+	margin-left: -5px;
+}

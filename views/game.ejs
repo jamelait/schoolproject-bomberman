@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title><%= title %></title>
+		
+		<link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+		
+		<link type="text/css" rel="stylesheet" href="/stylesheets/style.css" />
+
+		<script type="text/javascript" src="/javascripts/socket.io/node_modules/socket.io-client/dist/socket.io.min.js"></script>
+		<script type="text/javascript" src="/game/client.js"></script>
+		<script type="text/javascript" src="/game/Player.js"></script>
+		<script type="text/javascript" src="/game/GameState.js"></script>
+		<script type="text/javascript" src="/game/GameInfo.js"></script>
+		<script type="text/javascript" src="/game/Bomb.js"></script>
+		<script type="text/javascript" src="/game/Item.js"></script>
+		<script type="text/javascript" src="/game/QuadTree.js"></script>
+		<script type="text/javascript" src="/javascripts/preloadjs-0.2.0.min.js"></script>
+		<script type="text/javascript" src="/javascripts/easeljs-0.4.2.min.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="/javascripts/noty/jquery.noty.js"></script>
+		<script type="text/javascript" src="/javascripts/noty/layouts/center.js"></script>
+		<script type="text/javascript" src="/javascripts/noty/layouts/bottomRight.js"></script>
+		<script type="text/javascript" src="/javascripts/noty/themes/default.js"></script>
+		
+		<script type="text/javascript" src="/javascripts/underscore-min.js"></script>
+		
+		<link type="text/css" rel="stylesheet" href="/blackbirdjs/blackbird.css" />
+		<script type="text/javascript" src="/blackbirdjs/blackbird.js"></script>
+		
+		<script type="text/javascript" src="/javascripts/notifications.js"></script>
+	
+		<script>
+			//window.onload=init;
+		</script>
+  
+	</head>
+	
+	<body onload="init();">
+		<div class="container">
+
+			<div class="row-fluid">
+				
+					<div class="game">
+						<canvas id="info" width="200" height="390"></canvas>
+						<canvas id="game" width="510" height="390" tabindex="1"><a href="https://www.google.com/intl/fr/chrome/browser/?hl=fr"><img src="/images/incompatible.png"></a></canvas>
+					</div>
+				
+			</div>
+			
+			<% //if( !isPublic ){ %>
+			<br>
+			<div class="row-fluid">
+				<div class="offset1">
+					<input class="span2" id="invitePseudo" size="16" type="text" placeholder="Son pseudo">
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="offset1">
+					<button id="btnInvitation" type="button" class="btn btn-large" style="width: 128px;">Inviter un ami</button>
+				</div>
+			</div>
+			<% //} %>
+
+
+		</div> <!-- /container -->
+		<span id="hidden-pseudo" style="display: none;"><%= pseudo %></span>
+		<span id="hidden-gamename" style="display: none;"><%= gamename %></span>
+	</body>
+</html>
